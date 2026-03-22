@@ -1,0 +1,15 @@
+# Data — never commit raw datasets
+data/
+
+# Model checkpoints — too large for GitHub
+models/
+
+# Python environment
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Secrets
+.env
+*.key
