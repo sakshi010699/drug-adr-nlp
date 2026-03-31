@@ -94,3 +94,16 @@ drug-adr-nlp/
 
 └── README.md
 
+
+## Results
+
+| Model       | Task                  | F1     |
+|-------------|-----------------------|--------|
+| LSTM        | Binary classification | 0.723  |
+| BioBERT NER | Token classification  | 0.808  |
+
+BioBERT outperforms the LSTM baseline by +8.5 F1 points.
+Key improvement: bidirectional context and biomedical pretraining
+allow the model to identify multi-word ADR entities that the LSTM
+misses due to sequential processing limitations.
+
