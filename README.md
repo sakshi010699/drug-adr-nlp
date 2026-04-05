@@ -107,3 +107,13 @@ Key improvement: bidirectional context and biomedical pretraining
 allow the model to identify multi-word ADR entities that the LSTM
 misses due to sequential processing limitations.
 
+Note: Multi-word ADR entities are split at B-ADR boundaries — terms like 'gastrointestinal discomfort' may appear as separate tokens reflecting SIDER's term-level granularity.
+
+Final summary:
+  Total reviews analyzed:     30,000
+  Reviews with ADR detected:  20,760 (69.2%)
+  Unique drugs covered:        2,179
+  Unique conditions covered:   622
+  Most common ADR term:        pain, Depression, anxiety, nausea
+
+
